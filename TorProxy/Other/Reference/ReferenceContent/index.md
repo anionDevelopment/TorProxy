@@ -1,4 +1,4 @@
-# GRYVATorProxy-reference
+# TorProxy-reference
 
 ## Examples
 

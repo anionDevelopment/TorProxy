@@ -1,11 +1,11 @@
 @startuml CodeUnits-Overview
-title CodeUnits of GRYVATorProxy
+title CodeUnits of TorProxy
 
-[GRYVATorProxy]
-note as GRYVATorProxyNote
-  GRYVATorProxy is a docker-image for running a hidden service in a docker-container.
+[TorProxy]
+note as TorProxyNote
+  TorProxy is a docker-image for running a hidden service in a docker-container.
 end note
-GRYVATorProxy .. GRYVATorProxyNote
+TorProxy .. TorProxyNote
 
 
 @enduml

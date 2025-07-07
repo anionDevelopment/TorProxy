@@ -1,1 +1,1 @@
-# GRYVATorProxy-reference
+# TorProxy-reference
