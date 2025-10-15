@@ -1,5 +1,5 @@
 {
-  "name": "GRYVATorProxy",
+  "name": "TorProxy",
   "scripts": {
     "prepare": "husky"
   },

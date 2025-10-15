@@ -1,8 +1,8 @@
-# GRYVATorProxy
+# TorProxy
 
 ## Purpose
 
-[GRYVATorProxy](https://github.com/anionDev/GRYVATorProxy) is a docker-image for running a hidden service in a docker-container.
+[TorProxy](https://github.com/anionDev/TorProxy) is a docker-image for running a hidden service in a docker-container.
 
 ## Usage
 
@@ -27,7 +27,7 @@ All of these environment-variables are required.
 
 ### Example
 
-See [`docker-compose.example.yml`](https://github.com/anionDev/GRYVATorProxy/blob/main/GRYVATorProxy/Other/Reference/ReferenceContent/Examples/MinimalDockerComposeFile/docker-compose.yml) for an example how to use this image.
+See [`docker-compose.example.yml`](https://github.com/anionDev/TorProxy/blob/main/TorProxy/Other/Reference/ReferenceContent/Examples/MinimalDockerComposeFile/docker-compose.yml) for an example how to use this image.
 
 ## Additional stuff
 
@@ -57,4 +57,4 @@ This repository applies the [SemVerPractise](https://projects.aniondev.de/Public
 
 ## License
 
-See [License.txt](https://github.com/anionDev/GRYVATorProxy/blob/main/License.txt) for license-information.
+See [License.txt](https://github.com/anionDev/TorProxy/blob/main/License.txt) for license-information.

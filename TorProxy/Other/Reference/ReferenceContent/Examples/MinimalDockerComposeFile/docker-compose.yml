@@ -1,24 +1,24 @@
 version: '3.2'
 
 services:
-  gryvatorproxy_webserver:
+  torproxy_webserver:
     image: httpd
-    container_name: 'gryvatorproxy_webserver'
+    container_name: 'torproxy_webserver'
     networks:
       - network
 
-  gryvatorproxy:
-    image: gryvatorproxy:0.1.18
-    container_name: 'gryvatorproxy'
+  torproxy:
+    image: torproxy:0.1.18
+    container_name: 'torproxy'
     depends_on:
-      - gryvatorproxy_webserver
+      - torproxy_webserver
     volumes:
       - ./Volumes/Keys:/var/lib/tor/hiddenservicename
       - ./Volumes/Logs:/var/log/tor
     environment:
       - hiddenservicedir=hiddenservicename
       - hiddenserviceport=80
-      - hiddenserviceaddress=gryvatorproxy_webserver:80
+      - hiddenserviceaddress=torproxy_webserver:80
       - lognotice=true
       - logdebug=false
     networks:
