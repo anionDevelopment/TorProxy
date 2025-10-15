@@ -1,14 +1,10 @@
-import sys
-import os
-from pathlib import Path
-from ScriptCollection.GeneralUtilities import GeneralUtilities
-from ScriptCollection.ScriptCollectionCore import ScriptCollectionCore
-from ScriptCollection.TasksForCommonProjectStructure import TasksForCommonProjectStructure
+from ScriptCollection.TFCPS.Docker.TFCPS_CodeUnitSpecific_Docker import TFCPS_CodeUnitSpecific_Docker_Functions,TFCPS_CodeUnitSpecific_Docker_CLI
 
-
+ 
 def build():
-    TasksForCommonProjectStructure().standardized_tasks_build_for_docker_project(str(Path(__file__).absolute()), "QualityCheck", 1, sys.argv)
-
+    tf:TFCPS_CodeUnitSpecific_Docker_Functions=TFCPS_CodeUnitSpecific_Docker_CLI.parse(__file__)
+    tf.build()
+    #TODO add tor to sbom
 
 if __name__ == "__main__":
     build()
