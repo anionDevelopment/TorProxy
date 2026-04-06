@@ -4,6 +4,8 @@
 
 [TorProxy](https://github.com/anionDev/TorProxy) is a docker-image for running a hidden service in a docker-container.
 
+The currently used Tor-version is 0.4.8.19-1.
+
 ## Usage
 
 ### Volumes

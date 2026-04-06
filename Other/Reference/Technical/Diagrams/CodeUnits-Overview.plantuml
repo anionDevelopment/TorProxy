@@ -1,5 +1,11 @@
 @startuml CodeUnits-Overview
 title CodeUnits of TorProxy
 
+[TorProxy]
+note as TorProxyNote
+  TorProxy is a docker-image for running a hidden service in a docker-container.
+end note
+TorProxy .. TorProxyNote
+
 
 @enduml
