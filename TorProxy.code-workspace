@@ -1,46 +1,46 @@
 {
-	"folders": [
-		{
-			"path": ".",
-			"name": "Entire repository"
-		}
-	],
-	"tasks": {
-		"version": "2.0.0",
-		"tasks": [
-			{
-				"label": "Base: Build all codeunits",
-				"command": "scbuildcodeunits",
-				"type": "shell",
-				"options": {
-					"cwd": "${workspaceFolder}"
-				},
-				"aliases": [
-					"bb"
-				],
-				"allowcustomarguments": true
-			}
-		]
-	},
-	"settings": {
-		"files.exclude": {},
-		"spellright.language": [
-			"en"
-		],
-		"spellright.documentTypes": [
-			"markdown",
-			"plaintext"
-		]
-	},
-	"launch": {
-		"configurations": [
-			{
-				"name": "All: Debug current file",
-				"type": "debugpy",
-				"request": "launch",
-				"program": "${file}",
-				"console": "integratedTerminal"
-			}
-		]
-	}
+  "folders": [
+    {
+      "path": ".",
+      "name": "Entire repository"
+    }
+  ],
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Base: Build all codeunits",
+        "command": "scbuildcodeunits",
+        "type": "shell",
+        "options": {
+          "cwd": "${workspaceFolder}"
+        },
+        "aliases": [
+          "bb"
+        ],
+        "allowcustomarguments": true
+      }
+    ]
+  },
+  "settings": {
+    "files.exclude": {},
+    "spellright.language": [
+      "en"
+    ],
+    "spellright.documentTypes": [
+      "markdown",
+      "plaintext"
+    ]
+  },
+  "launch": {
+    "configurations": [
+      {
+        "name": "All: Debug current file",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "${file}",
+        "console": "integratedTerminal"
+      }
+    ]
+  }
 }
