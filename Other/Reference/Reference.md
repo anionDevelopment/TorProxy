@@ -8,6 +8,7 @@
 | feat-2 | available | Configure the hidden service via environment-variables.                     |
 | feat-3 | available | Use optional volumes for log-files and the hidden-service data-directory.   |
 | feat-4 | available | Write notice-level and debug-level log-messages via `lognotice`/`logdebug`. |
+| feat-5 | available | Report the container as healthy only if tor is bootstrapped and has established a circuit. |
 
 ## Findings
 

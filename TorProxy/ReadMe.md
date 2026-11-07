@@ -4,7 +4,7 @@
 
 [TorProxy](https://github.com/anionDev/TorProxy) is a docker-image for running a hidden service in a docker-container.
 
-The currently used Tor-version is 0.4.9.12-0+deb13u2.
+The currently used Tor-version is 0.4.9.15-0+deb13u1.
 
 ## Usage
 
@@ -26,6 +26,15 @@ The following environment-variables are supported:
 - `logdebug`
 
 All of these environment-variables are required.
+
+### Healthcheck
+
+The image defines a healthcheck which reports the container as `healthy` only if both of the following conditions are met:
+
+- The bootstrap of tor is finished, which means tor is connected to the tor-network.
+- Tor has established a circuit, which means it is able to build connections through the tor-network.
+
+The healthcheck queries tor via the control-socket `/run/tor/healthcheck.sock`, which exists only for this purpose. It is a unix-socket in the directory `/run/tor`, which is only accessible by `root` inside the container. It is not reachable via the network and must not be shared with other containers by a volume. Because no authentication-method is configured for it, tor logs a warning about an open control-port without authentication on startup. The healthcheck does not check whether the service behind `hiddenserviceaddress` is reachable.
 
 ### Example
 

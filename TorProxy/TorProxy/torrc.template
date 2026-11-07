@@ -1,4 +1,6 @@
 HiddenServiceDir /var/lib/tor/__.torrc.hiddenservicedir.__
 HiddenServicePort __.torrc.hiddenserviceport.__ __.torrc.hiddenserviceaddress.__
+# Control-socket which is reserved for the healthcheck of the container.
+ControlPort unix:/run/tor/healthcheck.sock
 __.torrc.lognotice.__
 __.torrc.logdebug.__
