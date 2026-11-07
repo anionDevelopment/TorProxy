@@ -1,2 +1,8 @@
 TorProxy/Other/Reference/ReferenceContent/Examples/Volumes
 Other/Resources/PlantUML/plantuml.jar
+
+CLAUDE.local.md
+.claude/settings.local.json
+.claude/*.lock
+Other/Logs
+Other/Resources/Artifacts

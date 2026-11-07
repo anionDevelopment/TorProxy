@@ -1,0 +1,8 @@
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Ignore public Tor relay fingerprint"
+regexes = [
+  "\\bA3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89\\b"
+]
