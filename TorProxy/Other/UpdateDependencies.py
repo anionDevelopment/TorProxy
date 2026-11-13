@@ -13,6 +13,7 @@ def update_dependencies():
     image=oci_image_manager.get_registry_address_for_image_with_default_tag(tf.get_repository_folder(),"Debian")
     tg=TFCPS_Tools_General(sc)
     tg.update_dependency_in_resources_folder(script_file, "Tor", sc.get_latest_apt_package_version_in_debian( image, "tor"))
+    tg.update_dependency_in_resources_folder(script_file, "Socat", sc.get_latest_apt_package_version_in_debian( image, "socat"))
 
 
 if __name__ == "__main__":

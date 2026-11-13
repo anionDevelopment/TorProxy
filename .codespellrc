@@ -1,0 +1,4 @@
+[codespell]
+# Skip generated/build output and vendored files: Artifacts contains the SBOM, diff reports,
+# generated source copies and the vendored docfx/lunr reference-documentation assets.
+skip = ./.git,*/Other/Artifacts,*/node_modules,*/dist,*/build,*/bin,*/obj,*/out,*/.venv,*/venv,*/packages,*/vendor,*/__pycache__,*.min.js,*.min.css,*.map,*.svg,*.lock,package-lock.json,*.woff,*.woff2,*.ttf,*.eot,*.pdf
