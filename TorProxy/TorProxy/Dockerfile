@@ -35,7 +35,7 @@ COPY ./TorProxy/EntryPoint.sh /Workspace/Application/EntryPoint.sh
 COPY ./TorProxy/HealthCheck.sh /Workspace/Application/HealthCheck.sh
 
 # The executable-bit is set explicitly because the build-context does not necessarily provide it (for example when the build runs on a filesystem which does not support unix-permissions).
-RUN chmod 0755 /Workspace/Application/HealthCheck.sh
+RUN chmod 0755 /Workspace/Application/EntryPoint.sh /Workspace/Application/HealthCheck.sh
 
 HEALTHCHECK --interval=60s --timeout=10s --start-period=300s --retries=3 CMD ["/Workspace/Application/HealthCheck.sh"]
 
